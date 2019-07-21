@@ -1,0 +1,195 @@
+.container{
+    width: 100%;
+    background: #fdfdfd; 
+}
+.container .header{
+    margin: 0 5% 0;
+    background: url('../images/logo.png') no-repeat 0px 0px;
+    background-size: 300px;
+    overflow: hidden;
+}
+.container .header .header_fr{
+    width: 100%;
+    margin-top: 15px;    
+}
+.container .header .header_fr input{
+    display: none;    
+}
+.container .header .header_fr a{
+    /* font-size: 10%; */
+    font-size: 1rem;
+    color: #23b35c;
+    position: relative;
+    padding-right: 10px;
+}
+.container .header .header_fr select{
+    padding: 0 7px;
+    padding-right:16px;
+    border: 1px solid #dfdfdf;
+    line-height: 25px;
+    height: 25px;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background: url('../images/Dropdown_box.png') no-repeat 65px center;
+}
+.container .header .header_fr .child_right{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.container .header .header_fr ul{
+    float: right;
+}
+
+@media screen and (max-width:533px){
+    .container .header .header_fr{
+        margin: 76px 40% 0px 0px;
+    }
+    .container .header .header_fr .mobile{
+        position: absolute;
+        left: 85%;
+        top: 15px;
+    }
+    .container .header .header_fr .child_right{
+        margin-left: 40%;
+    }
+    .container .header .header_fr .child_right ul{
+        display: none;
+        width: 100%;
+        text-align:center;
+    }
+}
+@media screen and (max-width:906px){
+    .container .header .header_fr .child_right ul{
+        display: none;
+        width: 100%;
+        text-align:center;
+    }
+    .container .header .header_fr ul li{
+        width:100%;
+        text-align:center;
+        transition: all .3s ease-in-out;
+        transform:scale(1);
+        margin-top: 10px;
+    }
+    .container .header .header_fr .child_right ul li span{
+        width:100%;
+        text-align:center;
+        user-select: none;
+        cursor: pointer;
+        margin: 0;
+    }
+    .container .header .header_fr ul li em{
+        display: none;
+    }
+    .container .header .header_fr ul li:hover{
+        transform: scale(1.2);
+    }
+}
+.container .header .header_fr ul li{
+    color: #ccc;
+    float: left;
+}
+.container .header .header_fr .mobile{
+    float:right;
+    width:40px;
+    height:40px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    transform:rotate(0deg);
+}
+
+.container .header .header_fr .mobile span{
+    display: block;
+    width:80%;
+    height:4px;
+    background:#333;
+    margin:7px auto 0;
+}
+.container .header .header_fr #header_nav:checked ~ .mobile{
+    transform:rotate(90deg);
+}
+.container .header .header_fr #header_nav:checked ~ .child_right ul{
+    display: block;
+}
+.container .header .header_fr .child_right ul li span{
+    display: inline-block;
+    color: #333;
+    margin:0 15px;
+    border-bottom:3px solid transparent;
+}
+.container .header .header_fr .child_right ul li:nth-child(6) span{
+    margin-right:0;
+}
+.container .header .header_fr .child_right ul li span:hover{
+    border-bottom:3px solid #fcac45;
+}
+
+@media screen and (min-width:907px){
+    .container .header .header_fr .mobile{
+        display: none;
+    }
+}
+.foot{
+    margin: 10px 5%;
+    line-height: 25px;
+}
+.foot .foot_nav ul{
+    line-height: 40px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.foot .foot_nav ul li a{
+    color: #ff8f54;
+    float: left;
+}
+.foot .foot_nav ul li span{
+    display: inline-block;
+    /* color: #333; */
+    margin:0 10px;
+    border-bottom:3px solid transparent;
+}
+.foot .foot_nav ul li:nth-child(6) span{
+    margin-right:0;
+}
+.foot .foot_nav ul li span:hover{
+    border-bottom:3px solid #fcac45;
+}
+.foot .foot_news{
+    margin-top: 10px;
+}
+.foot .foot_news div{
+    float: left;
+    margin-right: 200px;
+}
+.foot .foot_news p:nth-child(2){
+    float: left;
+}
+.foot .foot_news p:nth-child(3){
+    float: right;
+}
+.foot .foot_news p:nth-child(3) img{
+    vertical-align: middle;
+    cursor: pointer;
+}
+@media screen and (max-width:1013px){
+    .foot .foot_news div{
+        float: left;
+        margin:0;
+        width: 100%;
+    }
+}
+@media screen and (max-width:846px){
+    .foot .foot_news div{
+        float: left;
+        margin:0;
+        width: 100%;
+    }
+    .foot .foot_news p:nth-child(2){
+        float: left;
+        width: 100%;
+    }
+    .foot .foot_news p:nth-child(3){
+        float: left;
+    }
+}

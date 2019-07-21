@@ -1,0 +1,62 @@
+.content{
+    margin: 0 5%;
+}
+.content .poster{
+    width: 100%;
+    display: block;
+    margin-bottom: 2px;
+}
+.content h5{
+    line-height: 30px;
+}
+.content h5 a{
+    color: #333;
+}
+.content .content_fl{
+    width: 30%;
+    margin:0 3%;
+}
+.content .content_fl h2{
+    line-height: 56px;
+}
+.content .content_fl p{
+    line-height: 22px;
+    margin-bottom: 22px;
+}
+.content .content_fr{
+    margin-left: 3%;
+    width: 60%;
+}
+.content .content_fr h1{
+    font-weight: normal;
+    font-size: 35px;
+    color: #aaa;
+    line-height: 60px;
+}
+.content .content_fr p{
+    line-height: 32px;
+}
+input[type="email"],
+input[type="tel"],
+input[type="text"]{
+    width: 40%;
+    height: 23px;
+}
+input[type="button"]{
+    background: #ff6c2e;
+    line-height: 35px;
+    padding: 0 38px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 14px;
+    margin-bottom: 34px;
+}
+.content .map{
+    margin-left: 3%;
+    width: 60%;
+    margin-bottom: 40px;
+}
+.content .content_fr textarea{
+    width: 70%;
+    height: 120px;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //1
+    var price = 1200;
+
+    if(price >= 500)
+    {
+        price *= 0.5;
+    }else if(200<= price < 500){
+        price *= 0.8;
+    }
+
+    console.log('最终的价格为：'+price);
+
+    //dom文档对象模型 跟网页内容进行交互 
+    //写内容到界面里面
+
+    for(var i=1;i<=62;i++)
+    {
+        if(i<63)
+        {
+        //     document.write("<img src='./images/0"+i+".gif'>");
+        // }else{
+            document.write("<img src='./images/"+i+".gif'>");
+        }
+
+        //每行5个
+        if(i % 5 == 0)
+        {
+            document.write("<br />");
+        }
+
+    }
+
+    document.write("<br />");
+
+
+    //3.
+    for(var i=1;i<=5;i++)   //输出行
+    {
+        //输出星(2*i-1) 这一行输出多少个星号
+        for(var a=1;a<=2*i-1;a++)
+        {
+            document.write("*&nbsp;");
+        }
+        //换行
+        document.write("<br />");
+    }
+
+    document.write("<br />");
+
+    //4
+    for(var i=1;i<=10;i++)
+    {
+        if(i%2 != 0) //奇数
+        {
+            document.write("<u>"+i+"</u>");
+        }else{   //偶数
+            document.write(i);
+        }
+    }
+
+
+    //5  1+2+3+4.....=x
+    var str = "";
+    var num = 0;
+
+    for(var i=1;i<=10;i++)
+    {
+        if(i == 1)
+        {
+            str = i;
+        }else{
+            str += "+"+i;
+        }
+       
+        num += i;
+    }
+
+    document.write("<br />");
+
+    document.write(str+"="+num);
+
+    document.write("<br />");
+
+    //6. 
+
+    document.write("<table border='1px' width='600px'>");
+
+    for(var i=1;i<=9;i++)
+    {
+        document.write("<tr>");
+        for(var j=1;j<=9;j++)
+        {
+            if(j<=i)
+            {
+                var num = j+"*"+i+"="+j*i;
+                document.write("<td>"+num+"</td>");
+            }else{
+                document.write("<td>&nbsp;</td>");
+            }
+            
+        }
+        document.write("</tr>");
+    }
+
+    document.write("</table>");
+
+    //8
+    for(var i=1;i<=100;i++)
+    {
+        if(i%2 != 0)
+        {
+            document.write(i+"-");
+        }
+    }
+
+
+    //9
+    document.write("<table border='1px' height='500px' width='600px'>");
+
+    for(var i=1;i<=20;i++)
+    {
+        document.write("<tr>");
+        for(var j=1;j<=20;j++)
+        {
+            // 奇数行 && 奇数列 || 偶数行 && 偶数列
+            if( (i%2 != 0 && j%2 != 0) || (i%2 == 0 && j%2 == 0) )
+            {
+                document.write("<td style='background-color:white;'></td>");
+            }else{
+                document.write("<td style='background-color:black;'></td>");
+            }
+            
+        }
+        document.write("</tr>");
+    }
+
+    document.write("</table>");
+
+
+</script>

@@ -1,0 +1,40 @@
+.content{
+    margin: 0 5%;
+    height: 1100px;
+}
+.content .block{
+    margin-top: 10px;
+}
+.content .block ul li{
+    float: left;
+    background: #cccc;
+    line-height: 30px;
+    width: 24.85%;
+    text-align: center;
+    margin-right: .2%;
+}
+.content .block ul li:hover{
+    background: #ffa72b;
+}
+.content .block ul li:last-child{
+    margin-right: 0;
+}
+.content img{
+    width: 100%;
+    margin-top:20px;
+}
+.content .present h3 span{
+    color: #cccc;
+    line-height: 70px;
+}
+.content .present p{
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.content .present p:nth-child(2){
+    text-indent: 2rem;
+}
+.content .present p:nth-child(3){
+    text-indent: 2rem;
+}

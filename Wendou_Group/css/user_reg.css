@@ -1,0 +1,107 @@
+.content{
+    margin: 0 5%;
+    height: 1000px;
+}
+.content .poster{
+    width: 100%;
+    margin-top:10px;
+}
+.content h5{
+    line-height: 30px;
+}
+.content h5 a{
+    color: #333;
+}
+.content .regi{
+    border: 1px solid #ccc;
+    height: 500px;
+    width: 100%;
+}
+.content .regi  .regi_fl{
+    width: 60%;
+    margin-top: 40px;
+    margin-left: 3%;
+}
+.content .regi  .regi_fl h3{
+    display: block;
+    width: 90%;
+    margin-bottom: 40px;
+    font-weight: normal;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5.5px;
+}
+.content .regi  .regi_fl span{
+    font-size: 18px;
+    color: #00ae50;
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    border-bottom:2px solid #00ae50;
+}
+.content .regi  .regi_fl p{
+    margin-bottom: 20px;
+}
+.content .regi .regi_fl .son{
+    width: 100px;
+    margin-right: 10px;
+}
+.content .regi .regi_fl .son_fr{
+    width:60px;
+}
+.content .regi .regi_fl .son_fl{
+    width:250px;
+}
+.content .regi .regi_fl .son_fl a{
+    color: #aaa;
+}
+.content .regi .regi_fl .son_fl img{
+    vertical-align: middle;
+}
+.content .regi .regi_fl .son_fr p{
+    vertical-align: middle;
+    margin-bottom: 35px;    
+    float: right;
+}
+.content .regi .regi_fl .son_fr p:first-child{
+    margin-top: 5px;
+}
+input[type="password"],
+input[type="text"]{
+    width: 200px;
+    height: 30px;
+}
+input[name="yz"]{
+    width: 50px;
+    color:#aaa;
+    text-align: center;
+    vertical-align: middle;
+}
+input[type="button"]{
+    background: #00ae50;
+    padding: 0 60px;
+    line-height: 30px;
+    border-radius: 4px;
+}
+.content .regi  .regi_fr{
+    width: 100px;
+    margin-top: 40px;
+    margin-left: 10%;
+}
+.content .regi  .regi_fr a{
+    color: #333;
+}
+.content .regi  .regi_fr input[type="button"]{
+    color: #333;
+    background: #ccc;
+    padding: 0 20px;
+    border-radius: 0;
+    margin-top: 15px;
+}
+@media screen and (max-width:943px){
+    .content .regi  .regi_fr{
+        clear: both;
+    }
+    .content .regi  .regi_fl{
+        width: 100%;
+    }
+}

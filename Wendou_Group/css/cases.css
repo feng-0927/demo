@@ -1,0 +1,50 @@
+.content{
+    margin: 0 5%;
+}
+.content .block{
+    margin-top: 10px;
+}
+.content .block ul li{
+    float: left;
+    background: #cccc;
+    line-height: 30px;
+    width: 19.76%;
+    text-align: center;
+    margin-right: .3%;
+}
+.content .block ul li:hover{
+    background: #ffa72b;
+}
+.content .block ul li:last-child{
+    margin-right: 0;
+}
+.content .poster{
+    width: 100%;
+    display: block;
+    margin-bottom: 2px;
+}
+.content .website_img{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.content .website_img img{
+    width: 32%;
+}
+.content .paging{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+.content .paging a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    color:#333;
+}
+.content .paging a:hover{
+    background: #ffa72b;
+}
